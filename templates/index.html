@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+   <head>
+      <title>acqr</title>
+	 </head>
+   <body>
+    <form method="post">
+      <p>Enter Album Title:</p>
+      <p><input type = "text" name = "title"/></p>
+      <p><input type = "submit" value = "search" /></p>
+    </form>
+
+    {% if ttl %}
+      <p>{{ ttl }}</p>
+    {% endif %}
+    {% if url %}
+      <p><img src="{{ url }}"/></p>
+    {% endif %}
+
+   </body>
+</html>
